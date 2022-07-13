@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout7"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_night"
+    tools:context=".StartFragmentNight">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="175dp"
+        android:layout_height="175dp"
+        android:layout_marginTop="122dp"
+        app:cardCornerRadius="90dp"
+        app:cardElevation="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:cardCornerRadius="90dp">
+
+        <ImageView
+            android:id="@+id/imageView24"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/round_night" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="163dp"
+            android:layout_height="163dp"
+            android:layout_gravity="center"
+            app:cardCornerRadius="90dp">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/presents" />
+        </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/present_night"
+        android:layout_width="219dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="47dp"
+        android:background="@drawable/button_shadow_night"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView" />
+
+    <ImageButton
+        android:id="@+id/light"
+        android:layout_width="219dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_shadow_night"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/present_night" />
+
+    <ImageButton
+        android:id="@+id/autor_night"
+        android:layout_width="219dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/button_shadow_night"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/light" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Выбрать подарок"
+        android:textColor="@color/text_click"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/present_night"
+        app:layout_constraintEnd_toEndOf="@+id/present_night"
+        app:layout_constraintStart_toStartOf="@+id/present_night"
+        app:layout_constraintTop_toTopOf="@+id/present_night" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Светлая тема"
+        android:textColor="@color/text_click"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/light"
+        app:layout_constraintEnd_toEndOf="@+id/light"
+        app:layout_constraintStart_toStartOf="@+id/light"
+        app:layout_constraintTop_toTopOf="@+id/light" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Об авторе"
+        android:textColor="@color/text_click"
+        android:textSize="18dp"
+        app:layout_constraintBottom_toBottomOf="@+id/autor_night"
+        app:layout_constraintEnd_toEndOf="@+id/autor_night"
+        app:layout_constraintStart_toStartOf="@+id/autor_night"
+        app:layout_constraintTop_toTopOf="@+id/autor_night" />
+</androidx.constraintlayout.widget.ConstraintLayout>

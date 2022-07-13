@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout15"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_night"
+    tools:context=".DayFragmentNight" >
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="250dp"
+        android:layout_height="300dp"
+        app:cardCornerRadius="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/group"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="250dp"
+            android:layout_height="300dp">
+
+        </androidx.viewpager.widget.ViewPager>
+
+        <TextView
+            android:id="@+id/textScroller"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@drawable/text_night"
+            android:padding="16dp"
+            android:text="День Святого Валентина"
+            android:textAlignment="center"
+            android:textColor="@color/text_click"
+            android:textSize="18dp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <RadioGroup
+        android:id="@+id/group"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+        <RadioButton
+            android:id="@+id/radio_birthday"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/radio_button_2_night"
+            android:button="@null"
+            android:enabled="false" />
+
+        <RadioButton
+            android:id="@+id/radio_mart"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/radio_button_2_night"
+            android:button="@null"
+            android:enabled="false" />
+
+        <RadioButton
+            android:id="@+id/radio_february"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/radio_button_2_night"
+            android:button="@null"
+            android:enabled="false" />
+
+        <RadioButton
+            android:id="@+id/radio_new_year"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/radio_button_2_night"
+            android:button="@null"
+            android:enabled="false" />
+
+        <RadioButton
+            android:id="@+id/radio_valentin"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/radio_button_2_night"
+            android:button="@null"
+            android:enabled="false" />
+
+    </RadioGroup>
+
+    <ImageButton
+        android:id="@+id/next_to_price_night"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_shadow_night"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="31dp"
+        android:layout_marginTop="75dp"
+        android:text="3. Какой повод для праздника?"
+        android:textAlignment="center"
+        android:textColor="@color/text_click"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back_to_person_night"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/radio_button_night"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView98"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/arrow_night"
+        app:layout_constraintBottom_toBottomOf="@+id/back_to_person_night"
+        app:layout_constraintEnd_toEndOf="@+id/back_to_person_night"
+        app:layout_constraintStart_toStartOf="@+id/back_to_person_night"
+        app:layout_constraintTop_toTopOf="@+id/back_to_person_night" />
+
+    <ImageView
+        android:id="@+id/imageView99"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:rotation="180"
+        android:src="@drawable/arrow_night"
+        app:layout_constraintBottom_toBottomOf="@+id/next_to_price_night"
+        app:layout_constraintEnd_toEndOf="@+id/next_to_price_night"
+        app:layout_constraintStart_toStartOf="@+id/next_to_price_night"
+        app:layout_constraintTop_toTopOf="@+id/next_to_price_night" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/frameLayout14"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/back_night"
+    tools:context=".PersonFragmentNight">
+
+    <ImageButton
+        android:id="@+id/back_to_age_night"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_shadow_night"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/next_to_day_night"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/button_shadow_night"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView97"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:rotation="180"
+        android:src="@drawable/arrow_night"
+        app:layout_constraintBottom_toBottomOf="@+id/next_to_day_night"
+        app:layout_constraintEnd_toEndOf="@+id/next_to_day_night"
+        app:layout_constraintStart_toStartOf="@+id/next_to_day_night"
+        app:layout_constraintTop_toTopOf="@+id/next_to_day_night" />
+
+    <ImageView
+        android:id="@+id/imageView96"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/arrow_night"
+        app:layout_constraintBottom_toBottomOf="@+id/back_to_age_night"
+        app:layout_constraintEnd_toEndOf="@+id/back_to_age_night"
+        app:layout_constraintStart_toStartOf="@+id/back_to_age_night"
+        app:layout_constraintTop_toTopOf="@+id/back_to_age_night" />
+
+    <TextView
+        android:id="@+id/textView23"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="2. Кому вы хотите\nсделать подарок?"
+        android:textAlignment="center"
+        android:textColor="@color/text_click"
+        android:textSize="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintBottom_toTopOf="@+id/back_to_age_night"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginBottom="32dp">
+
+                <RadioButton
+                    android:id="@+id/dad"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Папа"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/mom"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Мама"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/bro"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Брат"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/sis"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Сестра"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/boy"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Сын"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/femboy"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Дочь"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/grandpa"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Дедушка"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/garndma"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Бабушка"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/hus"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Муж"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/wife"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Жена"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/maboy"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Парень"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/mafemboy"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Девушка"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/friend"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Друг"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/girlfriend"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Подруга"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/gigachad"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radio_button_night"
+                    android:button="@null"
+                    android:text="Себе"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_click"
+                    android:textSize="20dp" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Presents</string>
+    <color name="back">#F4DD81</color>
+    <color name="back_night">#141443</color>
+    <color name="back_night_light">#161645</color>
+    <color name="back_top">#FCEAA5</color>
+    <color name="back_bottom">#C7B15D</color>
+    <color name="text">#565ECD</color>
+    <color name="text_click">#FFC042</color>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="birhtday">День Рождения</string>
+    <string name="marth">8 Марта</string>
+    <string name="february">23 Февраля</string>
+    <string name="new_year">Новый Год</string>
+    <string name="valentin">День Святого Валентина</string>
+</resources>

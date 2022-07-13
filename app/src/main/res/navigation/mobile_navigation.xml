@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/startFragment">
+
+    <fragment
+        android:id="@+id/ageFragment"
+        android:name="com.example.presents.AgeFragment"
+        android:label="fragment_age"
+        tools:layout="@layout/fragment_age" >
+        <action
+            android:id="@+id/action_ageFragment_to_personFragment"
+            app:destination="@id/personFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragment"
+        android:name="com.example.presents.StartFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_start" >
+        <action
+            android:id="@+id/action_startFragment_to_ageFragment"
+            app:destination="@id/ageFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_startFragmentNight"
+            app:destination="@id/startFragmentNight" />
+        <action
+            android:id="@+id/action_startFragment_to_autorFragment"
+            app:destination="@id/autorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/personFragment"
+        android:name="com.example.presents.PersonFragment"
+        android:label="fragment_person"
+        tools:layout="@layout/fragment_person" >
+        <action
+            android:id="@+id/action_personFragment_to_dayFragment"
+            app:destination="@id/dayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayFragment"
+        android:name="com.example.presents.DayFragment"
+        android:label="fragment_day"
+        tools:layout="@layout/fragment_day" >
+        <action
+            android:id="@+id/action_dayFragment_to_priceFragment"
+            app:destination="@id/priceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/priceFragment"
+        android:name="com.example.presents.PriceFragment"
+        android:label="fragment_price"
+        tools:layout="@layout/fragment_price" >
+        <action
+            android:id="@+id/action_priceFragment_to_interestFragment"
+            app:destination="@id/interestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/interestFragment"
+        android:name="com.example.presents.InterestFragment"
+        android:label="fragment_interest"
+        tools:layout="@layout/fragment_interest" >
+        <action
+            android:id="@+id/action_interestFragment_to_productFragment"
+            app:destination="@id/productFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/startFragmentNight"
+        android:name="com.example.presents.StartFragmentNight"
+        android:label="fragment_start_night"
+        tools:layout="@layout/fragment_start_night" >
+        <action
+            android:id="@+id/action_startFragmentNight_to_autorFragmentNight"
+            app:destination="@id/autorFragmentNight" />
+        <action
+            android:id="@+id/action_startFragmentNight_to_ageFragmentNight"
+            app:destination="@id/ageFragmentNight" />
+    </fragment>
+    <fragment
+        android:id="@+id/productFragment"
+        android:name="com.example.presents.ProductFragment"
+        android:label="fragment_product"
+        tools:layout="@layout/fragment_product" >
+        <action
+            android:id="@+id/action_productFragment_to_finalFragment"
+            app:destination="@id/finalFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalFragment"
+        android:name="com.example.presents.FinalFragment"
+        android:label="fragment_final"
+        tools:layout="@layout/fragment_final" />
+    <fragment
+        android:id="@+id/autorFragment"
+        android:name="com.example.presents.AutorFragment"
+        android:label="fragment_autor"
+        tools:layout="@layout/fragment_autor" />
+    <fragment
+        android:id="@+id/autorFragmentNight"
+        android:name="com.example.presents.AutorFragmentNight"
+        android:label="fragment_autor_night"
+        tools:layout="@layout/fragment_autor_night" />
+    <fragment
+        android:id="@+id/ageFragmentNight"
+        android:name="com.example.presents.AgeFragmentNight"
+        android:label="fragment_age_night"
+        tools:layout="@layout/fragment_age_night" >
+        <action
+            android:id="@+id/action_ageFragmentNight_to_personFragmentNight"
+            app:destination="@id/personFragmentNight" />
+    </fragment>
+    <fragment
+        android:id="@+id/personFragmentNight"
+        android:name="com.example.presents.PersonFragmentNight"
+        android:label="fragment_person_night"
+        tools:layout="@layout/fragment_person_night" >
+        <action
+            android:id="@+id/action_personFragmentNight_to_dayFragmentNight"
+            app:destination="@id/dayFragmentNight" />
+    </fragment>
+    <fragment
+        android:id="@+id/dayFragmentNight"
+        android:name="com.example.presents.DayFragmentNight"
+        android:label="fragment_day_night"
+        tools:layout="@layout/fragment_day_night" >
+        <action
+            android:id="@+id/action_dayFragmentNight_to_priceFragmentNight"
+            app:destination="@id/priceFragmentNight" />
+    </fragment>
+    <fragment
+        android:id="@+id/priceFragmentNight"
+        android:name="com.example.presents.PriceFragmentNight"
+        android:label="fragment_price_night"
+        tools:layout="@layout/fragment_price_night" >
+        <action
+            android:id="@+id/action_priceFragmentNight_to_interestFragmentNight"
+            app:destination="@id/interestFragmentNight" />
+    </fragment>
+    <fragment
+        android:id="@+id/interestFragmentNight"
+        android:name="com.example.presents.InterestFragmentNight"
+        android:label="fragment_interest_night"
+        tools:layout="@layout/fragment_interest_night" >
+        <action
+            android:id="@+id/action_interestFragmentNight_to_producFragmentNight"
+            app:destination="@id/producFragmentNight" />
+    </fragment>
+    <fragment
+        android:id="@+id/producFragmentNight"
+        android:name="com.example.presents.ProducFragmentNight"
+        android:label="fragment_produc_night"
+        tools:layout="@layout/fragment_product_night" >
+        <action
+            android:id="@+id/action_producFragmentNight_to_finalFragmentNight"
+            app:destination="@id/finalFragmentNight" />
+    </fragment>
+    <fragment
+        android:id="@+id/finalFragmentNight"
+        android:name="com.example.presents.FinalFragmentNight"
+        android:label="fragment_final_night"
+        tools:layout="@layout/fragment_final_night" />
+</navigation>
